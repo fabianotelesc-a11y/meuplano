@@ -1,0 +1,22 @@
+{
+  "name": "Fabiano Teles",
+  "short_name": "Fabiano Teles",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#F6F3EE",
+  "theme_color": "#F6F3EE",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "selo-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "selo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
