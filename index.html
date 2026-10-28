@@ -209,11 +209,19 @@ label.btn { display: block; }
 #toast { position: fixed; left: 50%; bottom: calc(92px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 30px); opacity: 0; transition: .2s; background: var(--navy); color: var(--white); padding: 12px 18px; border-radius: 999px; font-weight: 500; max-width: calc(100% - 32px); z-index: 60; }
 #toast.show { opacity: 1; transform: translate(-50%, 0); } #toast.err { background: var(--bad); }
 @media (prefers-reduced-motion: reduce) { #toast { transition: none; } }
+.evo .evo-f { margin: 0; font-size: 16px; line-height: 1.45; color: var(--ink); } .evo .evo-f b { color: var(--navy); }
+.zap-card { gap: 14px; } .btn.zap { background: #1E7A4C; }
+.dia-nav { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: -4px 0 14px; } .dia-nav b { font-size: 15px; color: var(--navy); font-weight: 600; text-align: center; flex: 1; }
+.dia-nav .mini { font-size: 18px; padding: 4px 14px; } .dia-nav .mini:disabled { opacity: .35; cursor: default; }
+.semana .ver-d { cursor: pointer; }
+.nao-feita { gap: 10px; } .nao-feita small { font-size: 12px; color: var(--muted); display: block; } .nao-feita b { color: var(--navy); font-weight: 600; }
+.fiz-op { display: flex; flex-wrap: wrap; gap: 8px; } .feita .flex1 small + b + small { display: block; }
+.centro { text-align: center; }
 </style>
 </head>
 <body>
 <div id="app"><p class="loading">Carregando…</p></div>
 <div id="toast" role="status" aria-live="polite"></div>
-<script src="boot.js?v=20b56183"></script>
+<script src="boot.js?v=e1472f97"></script>
 </body>
 </html>
