@@ -206,7 +206,7 @@ label.btn { display: block; }
 .calc-h button { background: none; border: 1px solid var(--sky); color: var(--white); border-radius: 999px; padding: 8px 14px; font-weight: 600; }
 .calc iframe { flex: 1; border: 0; width: 100%; }
 
-#toast { position: fixed; left: 50%; bottom: calc(92px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 30px); opacity: 0; transition: .2s; background: var(--navy); color: var(--white); padding: 12px 18px; border-radius: 999px; font-weight: 500; max-width: calc(100% - 32px); z-index: 60; }
+#toast { position: fixed; left: 50%; bottom: calc(92px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 30px); opacity: 0; transition: .2s; background: var(--navy); color: var(--white); padding: 12px 18px; border-radius: 999px; font-weight: 500; max-width: calc(100% - 32px); z-index: 60; pointer-events: none; }
 #toast.show { opacity: 1; transform: translate(-50%, 0); } #toast.err { background: var(--bad); }
 @media (prefers-reduced-motion: reduce) { #toast { transition: none; } }
 .evo .evo-f { margin: 0; font-size: 16px; line-height: 1.45; color: var(--ink); } .evo .evo-f b { color: var(--navy); }
@@ -217,6 +217,31 @@ label.btn { display: block; }
 .nao-feita { gap: 10px; } .nao-feita small { font-size: 12px; color: var(--muted); display: block; } .nao-feita b { color: var(--navy); font-weight: 600; }
 .fiz-op { display: flex; flex-wrap: wrap; gap: 8px; } .feita .flex1 small + b + small { display: block; }
 .centro { text-align: center; }
+/* registro do dia (Fase 2): água, treino, cardio, foto do prato, metas da semana */
+.reg { gap: 8px; }
+.agua-n { margin: 0; font-size: 15px; } .agua-n b { font-size: 26px; font-weight: 600; color: var(--navy); letter-spacing: -.01em; }
+.barra { display: block; height: 8px; border-radius: 4px; background: var(--linho); overflow: hidden; } .barra i { display: block; height: 100%; background: var(--navy); border-radius: 4px; transition: width .25s; }
+.agua-b { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 4px; } .agua-b .mini { padding: 10px 14px; font-size: 13px; }
+.link.peq { align-self: flex-start; font-size: 12px; font-weight: 500; color: var(--muted); padding: 2px 0; }
+.agua-tam { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; } .agua-tam small { width: 100%; font-size: 11px; color: var(--muted); margin-top: 4px; }
+.mini.on { background: var(--navy); color: var(--white); border-color: var(--navy); }
+.reg-ok { display: flex; align-items: center; gap: 10px; } .reg-ok b { flex: 1; color: var(--navy); font-weight: 600; } .reg-ok .ok-b { width: 26px; height: 26px; }
+.fiz-op small.muted { width: 100%; }
+.fiz-2 { display: flex; gap: 8px; } .fiz-2 .btn { flex: 1; } .fiz-2 .cam { flex: none; width: auto; display: flex; align-items: center; gap: 6px; padding: 13px 16px; }
+.prato-th { width: 46px; height: 46px; border-radius: 12px; flex: none; border: 1px solid var(--linho); background: var(--linho) center / cover no-repeat; cursor: pointer; padding: 0; }
+.prato-th:disabled { cursor: default; }
+.cam-m { display: flex; align-items: center; justify-content: center; width: 38px; height: 38px; padding: 0; flex: none; }
+.mini svg { vertical-align: -3px; }
+.prato-obs { display: block; font-size: 12px; color: var(--muted); font-style: italic; overflow-wrap: anywhere; }
+.prato-foto { display: flex; align-items: center; justify-content: center; text-align: center; min-height: 190px; border-radius: 18px; border: 1.5px dashed #B9AD97; background: var(--white) center / cover no-repeat; color: var(--navy); font-weight: 600; cursor: pointer; }
+.prato-foto.tem { border-style: solid; border-color: var(--linho); min-height: 240px; align-items: flex-end; padding-bottom: 12px; }
+.prato-foto.tem span { background: rgba(255, 255, 255, .92); padding: 7px 14px; border-radius: 999px; font-size: 13px; }
+.campo textarea { border: 1px solid #DCD3C4; border-radius: 12px; padding: 12px; font: inherit; font-size: 16px; font-weight: 400; background: var(--white); resize: vertical; color: var(--ink); }
+.campo textarea:focus { outline: 2px solid var(--navy); outline-offset: 1px; }
+.metas { cursor: pointer; } .metas.completa { border-color: var(--ok); }
+.metas-l { display: flex; flex-direction: column; gap: 10px; }
+.meta-i { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; font-size: 14px; } .meta-i b { color: var(--navy); font-weight: 600; } .meta-i .barra { grid-column: 1 / -1; height: 6px; }
+.meta-i.ok b { color: var(--ok); } .meta-i.ok .barra i { background: var(--ok); }
 </style>
 </head>
 <body>
