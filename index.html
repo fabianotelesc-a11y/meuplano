@@ -235,6 +235,13 @@ label.btn { display: block; }
 .metas-l { display: flex; flex-direction: column; gap: 10px; }
 .meta-i { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; font-size: 14px; } .meta-i b { color: var(--navy); font-weight: 600; } .meta-i .barra { grid-column: 1 / -1; height: 6px; }
 .meta-i.ok b { color: var(--ok); } .meta-i.ok .barra i { background: var(--ok); }
+/* FT Score (Fase 3) */
+.score { gap: 8px; }
+.score-n { display: flex; align-items: baseline; gap: 10px; } .score-n b { font-size: 46px; font-weight: 300; line-height: 1; color: var(--navy); letter-spacing: -.02em; } .score-n span { font-size: 13px; color: var(--muted); }
+.score-g { width: 100%; height: auto; display: block; } .score-g rect { fill: var(--navy); } .score-g rect.atual { fill: var(--sky); } .score-g text { font-size: 10px; fill: var(--muted); font-family: inherit; }
+.score-d { font-size: 14px; }
+.score-p summary { font-size: 13px; font-weight: 600; color: var(--navy); cursor: pointer; } .score-p ul { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; font-size: 14px; }
+.score-p li { display: flex; justify-content: space-between; gap: 10px; } .score-p li b { color: var(--navy); font-weight: 600; }
 </style>
 </head>
 <body>
