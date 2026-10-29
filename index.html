@@ -6,7 +6,7 @@
 <title>Fabiano Teles Premium</title>
 <meta name="description" content="Área do paciente: seu plano alimentar, trocas, relatório semanal e evolução.">
 <meta name="robots" content="noindex">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https://mhanleqbnlmuhmzqicqj.supabase.co https://storage.tally.so; media-src 'self' blob: https://mhanleqbnlmuhmzqicqj.supabase.co; connect-src 'self' https://mhanleqbnlmuhmzqicqj.supabase.co wss://mhanleqbnlmuhmzqicqj.supabase.co https://viacep.com.br; frame-src 'self' blob: https://mhanleqbnlmuhmzqicqj.supabase.co https://calculadora.fabianotelesnutri.com.br; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https://mhanleqbnlmuhmzqicqj.supabase.co https://storage.tally.so https://i.ytimg.com; media-src 'self' blob: https://mhanleqbnlmuhmzqicqj.supabase.co; connect-src 'self' https://mhanleqbnlmuhmzqicqj.supabase.co wss://mhanleqbnlmuhmzqicqj.supabase.co https://viacep.com.br; frame-src 'self' blob: https://mhanleqbnlmuhmzqicqj.supabase.co https://calculadora.fabianotelesnutri.com.br https://www.youtube-nocookie.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 
 <meta name="theme-color" content="#F7F7F7">
@@ -100,6 +100,14 @@ button.card { cursor: pointer; }
 .chip-f { flex: none; background: var(--white); border: 1px solid #D7D7D7; border-radius: 999px; padding: 7px 13px; font-size: 13px; font-weight: 600; color: var(--navy); cursor: pointer; white-space: nowrap; }
 .chip-f.on { background: var(--navy); border-color: var(--navy); color: #fff; }
 .rec-atalho { display: flex; align-items: center; gap: 14px; text-align: left; width: 100%; cursor: pointer; color: var(--navy); }
+.au-atalho { display: flex; align-items: center; gap: 14px; text-align: left; width: 100%; cursor: pointer; color: var(--navy); }
+.au-prog { display: flex; flex-direction: column; gap: 8px; } .au-tema { display: flex; flex-direction: column; gap: 4px; }
+.au-item { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; background: none; border: 0; border-top: 1px solid var(--linho2); padding: 10px 0; cursor: pointer; color: inherit; font: inherit; }
+.au-tema .kick + .au-item { border-top: 0; } .au-item b { display: block; color: var(--navy); font-size: 15px; } .au-item small { color: #5E6875; font-size: 13px; }
+.au-item.fechada { opacity: .55; cursor: default; }
+.au-c { flex: none; width: 96px; height: 54px; border-radius: 8px; background: #E9ECEF center / cover no-repeat; display: flex; align-items: center; justify-content: center; color: #8A96A3; }
+.au-ok { flex: none; width: 24px; height: 24px; border-radius: 50%; background: var(--ok, #1D6B3A); display: flex; align-items: center; justify-content: center; }
+.au-video { position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; background: #000; margin: 4px 0 10px; } .au-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .voltar { align-self: flex-start; }
 .rec-meta { font-size: 13px; color: var(--muted); margin: 0; }
 .rec-ok, .rec-dif { margin: 0; padding: 12px 14px; border-radius: 14px; font-size: 13px; line-height: 1.45; } .rec-ok { background: #EEF4F0; color: #1F4D37; } .rec-dif { background: #F8F2E6; color: #6B4A12; }
@@ -271,6 +279,6 @@ label.btn { display: block; }
 <body>
 <div id="app"><p class="loading">Carregando…</p></div>
 <div id="toast" role="status" aria-live="polite"></div>
-<script src="boot.js?v=6f18beb1"></script>
+<script src="boot.js?v=4de1be2c"></script>
 </body>
 </html>
