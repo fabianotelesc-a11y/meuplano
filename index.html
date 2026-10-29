@@ -82,6 +82,30 @@ button.card { cursor: pointer; }
 .consulta { flex-direction: row; align-items: center; gap: 14px; }
 .data-q { width: 54px; height: 58px; border-radius: 12px; background: var(--papel); display: flex; flex-direction: column; align-items: center; justify-content: center; flex: none; }
 .data-q small { font-size: 10px; font-weight: 700; color: var(--ouro); } .data-q b { font-size: 24px; font-weight: 300; color: var(--navy); line-height: 1; }
+/* Receitas (Fase 4) */
+.variar { border-top: 1px solid var(--linho); margin-top: 6px; padding-top: 6px; }
+.variar-b { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 10px; background: none; border: none; padding: 8px 0; text-align: left; color: var(--navy); cursor: pointer; }
+.variar-b b { display: block; font-size: 14px; font-weight: 700; } .variar-b small { display: block; font-size: 12px; color: var(--muted); }
+.variar-l { display: flex; flex-direction: column; gap: 8px; padding: 4px 0 8px; }
+.rec-m { display: flex; align-items: center; gap: 12px; background: var(--white); border: 1px solid var(--linho); border-radius: 14px; padding: 8px; text-align: left; color: var(--navy); cursor: pointer; }
+.rec-m b { display: block; font-size: 14px; } .rec-m small { display: block; font-size: 12px; color: var(--muted); }
+.rec-troca { font-style: normal; font-size: 11px; font-weight: 700; background: #F2EDE0; color: var(--navy); padding: 3px 8px; border-radius: 999px; white-space: nowrap; }
+.rec-foto { width: 56px; height: 56px; border-radius: 12px; flex: none; background: var(--linho) center / cover no-repeat; display: flex; align-items: center; justify-content: center; color: var(--muted); }
+.rec-foto-g { display: block; width: 100%; height: 170px; border-radius: 16px; background: var(--linho) center / cover no-repeat; }
+.rec-foto-c { display: flex; width: 100%; aspect-ratio: 4 / 3; border-radius: 14px; background: var(--linho) center / cover no-repeat; align-items: center; justify-content: center; color: var(--muted); }
+.rec-grade { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.rec-c { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; background: var(--white); border: 1px solid var(--linho); border-radius: 16px; padding: 10px; text-align: left; color: var(--navy); cursor: pointer; }
+.rec-c b { font-size: 14px; line-height: 1.25; } .rec-c small { font-size: 12px; color: var(--muted); } .rec-c .rec-onde { color: var(--navy); }
+.chips-f { display: flex; gap: 8px; overflow-x: auto; padding: 2px 0 6px; -webkit-overflow-scrolling: touch; scrollbar-width: none; } .chips-f::-webkit-scrollbar { display: none; }
+.chip-f { flex: none; background: var(--white); border: 1px solid #D7D7D7; border-radius: 999px; padding: 7px 13px; font-size: 13px; font-weight: 600; color: var(--navy); cursor: pointer; white-space: nowrap; }
+.chip-f.on { background: var(--navy); border-color: var(--navy); color: #fff; }
+.rec-atalho { display: flex; align-items: center; gap: 14px; text-align: left; width: 100%; cursor: pointer; color: var(--navy); }
+.voltar { align-self: flex-start; }
+.rec-meta { font-size: 13px; color: var(--muted); margin: 0; }
+.rec-ok, .rec-dif { margin: 0; padding: 12px 14px; border-radius: 14px; font-size: 13px; line-height: 1.45; } .rec-ok { background: #EEF4F0; color: #1F4D37; } .rec-dif { background: #F8F2E6; color: #6B4A12; }
+.itens li.troca .n small { color: #6B4A12; }
+.folha-c .itens { padding: 0; } .folha-c .itens .q { width: 38%; }
+.rec-livres { margin: 0; font-size: 14px; } .rec-passos { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 15px; line-height: 1.45; }
 .atalhos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .atalhos button { background: var(--white); border: 1px solid var(--linho); border-radius: 16px; padding: 18px; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; color: var(--navy); cursor: pointer; text-align: left; min-height: 104px; }
 .atalhos b { font-size: 14px; font-weight: 600; } .atalhos small { font-size: 12px; color: var(--muted); }
@@ -247,6 +271,6 @@ label.btn { display: block; }
 <body>
 <div id="app"><p class="loading">Carregando…</p></div>
 <div id="toast" role="status" aria-live="polite"></div>
-<script src="boot.js?v=1c4d2b41"></script>
+<script src="boot.js?v=6f18beb1"></script>
 </body>
 </html>
