@@ -230,7 +230,7 @@ dialog.ft-modal[open] { animation: ft-surge var(--ft-medio) var(--ft-curva); }
   .marca-ft .n1, .marca-ft .n2 { font-size: 26px; } .marca-ft .sub { font-size: 7px; padding-bottom: 3px; }
 }
 /* app do aluno: o ft em foto no lugar da marca desenhada (area/fundo-ft.jpg) */
-.acesso.aluno .acesso-marca { background: #0A1220 url(fundo-ft.jpg) center / cover no-repeat; min-height: 280px; }
+.acesso.aluno .acesso-marca { background: #0A172A url(fundo-ft.jpg) center / cover no-repeat; min-height: 280px; }
 .acesso.aluno .acesso-marca .marca-ft { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 @media (max-width: 960px) { .acesso.aluno .acesso-marca { min-height: 38vh; min-height: 38dvh; } }
 .acesso-chk { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 500; color: var(--ft-texto); }
